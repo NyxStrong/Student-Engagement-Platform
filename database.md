@@ -50,22 +50,6 @@
         - status
             - int
             - 0-2
-    - feedback
-        - id
-            - PK
-            - int
-        - userId
-            - Fk (users)
-            - int
-        - eventId
-            - FK (events)
-            - int
-        - rating
-            - int
-            - 0-9
-        - comments
-            - varchar(max)
-    - 
 - Junctions
     - signups (users - events)
         - id
@@ -84,9 +68,11 @@
         - participation
             - int
             - 0-10
-        - feedback
-            - FK (feedback)
+        - rating
             - int
+            - 0-9
+        - comment
+            - varchar(max)
     - memberships (users - clubs)
         - id
             - PK
@@ -97,6 +83,8 @@
         - clubId
             - FK (clubs)
             - int
+        - admin
+            - bool
         - status
             - int
             - 0-2

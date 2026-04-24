@@ -73,10 +73,25 @@
     - Data
         - List
             - Club
+                - default
+                - List
+                    - Event
+                - List
+                    - User
 - /clubs/{clubId}
     - GET
     - Data
         - Club
+            - default
+            - List
+                - Event
+            - List
+                - User
+- /clubs/{clubId}/admins
+    - GET
+    - Data
+        - List
+            - User
 - /clubs/{clubId}/join
     - POST
     - Parameter
@@ -99,12 +114,12 @@
     - POST
     - Parameter
         - userId (int)
-        - clubId (int)
+        - adminId (int)
 - /clubs/{clubId}/retire
     - POST
     - Parameter
         - userId (int)
-        - clubId (int)
+        - adminId (int)
 - /feedback/(eventId)
     - GET
     - Data

@@ -53,6 +53,9 @@
         - id
             - PK
             - int
+        - userId
+            - Fk (users)
+            - int
         - eventId
             - FK (events)
             - int
@@ -77,6 +80,9 @@
             - bool
         - attendnace
             - bool
+        - participation
+            - int
+            - 0-10
         - feedback
             - FK (feedback)
             - int

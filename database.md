@@ -1,0 +1,95 @@
+- Main
+    - users
+        - id
+            - PK
+            - int
+        - name
+            - varchar(255)
+        - type
+            - varchar(10)
+            - "student"|"admin"
+        - studentId
+            - int
+            - nullable
+        - points
+            - int
+    - events
+        - id
+            - PK
+            - int
+        - name
+            - varchar(255)
+        - description
+            - varchar(max)
+        - location
+            - varchar(255)
+        - dateTime
+            - datetime
+        - club
+            - uuid
+            - FK (clubs)
+        - facilities
+            - int
+            - 0-2
+        - it
+            - int
+            - 0-2
+        - finance
+            - int
+            - 0-2
+        - status
+            - int
+            - 0-4
+    - clubs
+        - id
+            - PK
+            - int
+        - name
+            - varchar(255)
+        - status
+            - int
+            - 0-2
+    - feedback
+        - id
+            - PK
+            - int
+        - eventId
+            - FK (events)
+            - int
+        - rating
+            - int
+            - 0-9
+        - comments
+            - varchar(max)
+    - 
+- Junctions
+    - signups (users - events)
+        - id
+            - PK
+            - int
+        - userId
+            - FK (users)
+            - int
+        - eventId
+            - FK (events)
+            - int
+        - rsvp
+            - bool
+        - attendnace
+            - bool
+        - feedback
+            - FK (feedback)
+            - int
+    - memberships (users - clubs)
+        - id
+            - PK
+            - int
+        - userId
+            - FK (users)
+            - int
+        - clubId
+            - FK (clubs)
+            - int
+        - status
+            - int
+            - 0-2

@@ -1,0 +1,81 @@
+- /
+- /users/
+    - GET
+    - data
+        - List
+            - User
+- /users/{userId}
+    - GET
+    - data
+        - User
+- /users/{userId}/events
+    - GET
+    - data
+        - List
+            - eventId (int)
+- /events
+    - GET
+    - Data
+        - List
+            - Event
+                - default
+                - List
+                    - User
+- /events/{eventId}
+    - GET
+    - Data
+        - Event
+            - default
+            - List
+                - User
+- /events/{eventId}/rsvp
+    - POST
+    - Parameters
+        - userId (int)
+- /events/{eventId}/checkin
+    - POST
+    - Parameters
+        - userId (int)
+        - adminId (int)
+- /events/create
+    - POST
+    - Parameters
+        - adminId (int)
+        - name (string)
+        - description (string)
+        - location (string)
+        - dateTime (string (mm/dd/yy hh:mm))
+        - club (int)
+        - requirements (object)
+            - facilities (bool)
+            - it (bool)
+            - finance (bool)
+    - Data
+        - id (int)
+- /clubs
+- /clubs/{clubId}
+- /clubs/{clubId}/join
+    - POST
+    - Parameter
+        - userId (int)
+- /clubs/{clubId}/approveJoin
+    - POST
+    - Parameter
+        - userId (int)
+        - adminId (int)
+- /clubs/create
+- /clubs/{clubId}/apply
+- /clubs/{clubId}/approve
+- /clubs/{clubId}/retire
+- /feedback/(eventId)
+    - GET
+    - Data
+        - List
+            - Feedback
+- /feedback/create
+    - POST
+    - Parameters
+        - userId (int)
+        - eventId (int)
+        - rating (int)
+        - comments (string)

@@ -11,6 +11,7 @@
         - studentId
             - int
             - nullable
+            - unique
         - points
             - int
     - events

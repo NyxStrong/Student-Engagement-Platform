@@ -53,7 +53,14 @@
     - Data
         - id (int)
 - /clubs
+    - GET
+    - Data
+        - List
+            - Club
 - /clubs/{clubId}
+    - GET
+    - Data
+        - Club
 - /clubs/{clubId}/join
     - POST
     - Parameter
@@ -64,9 +71,24 @@
         - userId (int)
         - adminId (int)
 - /clubs/create
+    - POST
+    - Parameter
+        - name (string)
 - /clubs/{clubId}/apply
+    - POST
+    - Parameter
+        - userId (int)
+        - name (string)
 - /clubs/{clubId}/approve
+    - POST
+    - Parameter
+        - userId (int)
+        - clubId (int)
 - /clubs/{clubId}/retire
+    - POST
+    - Parameter
+        - userId (int)
+        - clubId (int)
 - /feedback/(eventId)
     - GET
     - Data

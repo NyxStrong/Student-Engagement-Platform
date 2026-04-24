@@ -26,8 +26,8 @@
             - varchar(255)
         - dateTime
             - datetime
-        - club
-            - uuid
+        - clubId
+            - int
             - FK (clubs)
         - facilities
             - int

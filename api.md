@@ -37,6 +37,22 @@
     - Parameters
         - userId (int)
         - adminId (int)
+- /events/{eventId}/Submit
+    - Post
+    - Parameters
+        - adminId (int)
+- /events/{eventId}/Approve
+    - Post
+    - Parameters
+        - adminId (int)
+- /events/{eventId}/publish
+    - Post
+    - Parameters
+        - adminId (int)
+- /events/{eventId}/complete
+    - Post
+    - Parameters
+        - adminId (int)
 - /events/create
     - POST
     - Parameters

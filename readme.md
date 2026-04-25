@@ -29,6 +29,11 @@ swift run STB migrate -y
 swift run STB
 ```
 
+### Start Backend
+```bash
+cd Student-Engagement-Frontend
+
+```
 
 ## Points
 - 1 point for rsvp

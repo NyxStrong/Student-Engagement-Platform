@@ -28,3 +28,10 @@ swift run STB migrate -y
 # Start backend
 swift run STB
 ```
+
+
+## Points
+- 1 point for rsvp
+- 5 points for attening the event
+- 4 points for feedback on the event
+- 0-10 points for club admins to give out for participation

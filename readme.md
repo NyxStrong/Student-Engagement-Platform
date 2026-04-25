@@ -33,6 +33,13 @@ swift run STB
 ```bash
 cd Student-Engagement-Frontend
 
+# Install dependancies
+npm install
+
+# Set api endpoint in src/Tools/controller.jsx
+
+# Start Program
+npm run dev -- --host
 ```
 
 ## Points

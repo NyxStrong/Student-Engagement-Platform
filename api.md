@@ -61,6 +61,7 @@
         - description (string)
         - location (string)
         - dateTime (string (mm/dd/yy hh:mm am/pm))
+        - tag (string)
         - clubId (int)
         - requirements (object)
             - facilities (bool)

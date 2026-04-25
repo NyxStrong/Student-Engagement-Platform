@@ -1,3 +1,6 @@
 [submodule "Student-Engagement-Backend"]
 	path = Student-Engagement-Backend
 	url = https://github.com/NyxStrong/Student-Engagement-Backend
+[submodule "Student-Engagement-Frontend"]
+	path = Student-Engagement-Frontend
+	url = https://github.com/shongzahToo/Student-Engagement-Frontend

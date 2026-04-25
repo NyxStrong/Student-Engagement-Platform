@@ -26,6 +26,8 @@
             - varchar(255)
         - dateTime
             - datetime
+        - tag
+            - varchar(255)
         - clubId
             - int
             - FK (clubs)

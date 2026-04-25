@@ -60,8 +60,8 @@
         - name (string)
         - description (string)
         - location (string)
-        - dateTime (string (mm/dd/yy hh:mm))
-        - club (int)
+        - dateTime (string (mm/dd/yy hh:mm am/pm))
+        - clubId (int)
         - requirements (object)
             - facilities (bool)
             - it (bool)
@@ -97,25 +97,6 @@
     - Parameter
         - userId (int)
 - /clubs/{clubId}/approveJoin
-    - POST
-    - Parameter
-        - userId (int)
-        - adminId (int)
-- /clubs/create
-    - POST
-    - Parameter
-        - name (string)
-- /clubs/{clubId}/apply
-    - POST
-    - Parameter
-        - userId (int)
-        - name (string)
-- /clubs/{clubId}/approve
-    - POST
-    - Parameter
-        - userId (int)
-        - adminId (int)
-- /clubs/{clubId}/retire
     - POST
     - Parameter
         - userId (int)
